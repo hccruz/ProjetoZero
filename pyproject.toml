@@ -1,0 +1,17 @@
+[project]
+name = "projetozero"
+version = "0.1.0"
+description = "Estruturar um projeto do zero"
+authors = [
+    {name = "Heraldo Candido da Cruz",email = "hccruz@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas (>=3.0.3,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
