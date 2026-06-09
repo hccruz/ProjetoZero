@@ -27,6 +27,6 @@ def extract_from_excel(path: str) -> List[pd.DataFrame]:
     return data_frame_list
 
 
-# if __name__ == '__main__':
-#     data_frame_list = extract_from_excel(path)
-#     print(data_frame_list)
+if __name__ == '__main__':
+    data_frame_list = extract_from_excel(path)
+    print(data_frame_list)
