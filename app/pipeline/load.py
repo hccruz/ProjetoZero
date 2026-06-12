@@ -1,10 +1,13 @@
+import os  # Biblioteca para manipular arquivos e pastas
+
 import pandas as pd
-import os # Biblioteca para manipular arquivos e pastas
 
 
-def load_excel(data_frame: pd.DataFrame, output_path: str, file_name: str) -> str:
-    
-    '''
+def load_excel(
+    data_frame: pd.DataFrame, output_path: str, file_name: str
+) -> str:
+
+    """
     receber um dataframe e salvar como excel
 
     args: data_frame (pd.DataFrame): dataframe a ser salvo como excel
@@ -13,11 +16,10 @@ def load_excel(data_frame: pd.DataFrame, output_path: str, file_name: str) -> st
 
     return: "Arquivo salvo com sucesso"
 
-    '''
-    
+    """
+
     if not os.path.exists(output_path):
         os.makedirs(output_path)
-    
+
     data_frame.to_excel(f'{output_path}/{file_name}.xlsx', index=False)
     return 'Arquivo salvo com sucesso'
-
